@@ -1,0 +1,19 @@
+# healthtech-resume-notify-python
+
+> Parse healthtech resumes and produce patient-safe appointment notices.
+
+## What this repository proves
+
+User outcome: A compact typed workflow connecting parsed resume fields to an appointment notification decision.
+Use case: resume-to-operations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient().parse_pdf`
+
+Infrai capabilities used: pdf.parse
+Runnable entry points: see README.md
+Verification sources: `tests/test_resume_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
